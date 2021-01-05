@@ -1,0 +1,36 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    color: darkslateblue;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+/*דוגמא לעימוד*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*רווח בין הגרידים*/
+    grid-gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+/*לרספונסיביות. כוונה: ב 800 ומטה יתחיל הכלל שכתוב כאן*/
+@media(max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container {}
